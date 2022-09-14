@@ -27,7 +27,7 @@ weatherForm.addEventListener("submit", (e) => {
   messageTwo.textContent = "";
   const location = searchElement.value;
 
-  const url = `http://localhost:3000/weather?address=${location}`;
+  const url = `/weather?address=${location}`;
 
   if (!location) {
     console.log("Please enter the location");
